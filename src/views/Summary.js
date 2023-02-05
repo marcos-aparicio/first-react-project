@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function renderInputResult(data){
     return (
@@ -16,11 +16,12 @@ export default function Summary(){
             <div className="text-center alert alert-danger">Both forms must be filled completely</div>
             :  location.state.data.map(renderInputResult.bind(this));
     return(
-        <div className="h-100 text-light bg-dark container-fluid justify-content-center p-5">
+        <div className="h-100 text-light bg-dark container-fluid align-items-center justify-content-center p-5">
             <h1 className="text-center">Summary</h1>
             <div className="container">
                 {mainComponent}
             </div>
+            <Link to='/' className="btn btn-light mx-auto">Take the quizz again</Link>
         </div>
     );
 }

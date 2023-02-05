@@ -8,7 +8,7 @@ function Header(){
                 <div className="container-fluid flex-column align-items-end">
                     <div className="navbar-collapse collapse">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link to="/" className="nav-link">Personal Information 1</Link>
                             </li>
                             <li className="nav-item">
@@ -16,7 +16,7 @@ function Header(){
                             </li>
                             <li className="nav-item">
                                 <Link to="/summary" className="nav-link">Summary</Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
